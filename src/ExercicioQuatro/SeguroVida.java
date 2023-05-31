@@ -5,12 +5,12 @@ import java.util.Map;
 public class SeguroVida extends Conta implements CalculoTributos {
 
     public SeguroVida(){
-        System.out.println("Informe seu Nome e CPF");
+        System.out.println("Informe seu CPF e Nome");
         cadastro.put(teclado.next(), teclado.next());
     }
     public void mostrarDados(){
         for (Map.Entry<String, String> dados : cadastro.entrySet()) {
-            System.out.println("Nome: " + dados.getKey() + "\nCPF: " + dados.getValue() + "\nSaldo: " + getSaldo());
+            System.out.println("CPF: " + dados.getKey() + "\nNome: " + dados.getValue() + "\nSaldo: " + getSaldo());
 
         }
     }
